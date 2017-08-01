@@ -6,21 +6,23 @@
 body {
     font-family: 'Open Sans', serif, sans-serif;
     background-color: ghostwhite;
+    padding-top: 150px;
 }
-
+.wrapper {
+    background-image: url(/images/bookCloth.png);
+}
 
 /*############ HEADER ############*/
 header {
     height: 200px;
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    grid-template-columns: 1fr;
 }
 /* BANNER */
 .banner {
     text-align: center;
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
 }
 .banner h1 {
     font-size: 6em;
@@ -28,15 +30,21 @@ header {
     font-weight: 100;
 }
 /* NAVIGATION */
+nav, .wrapper {
+    position: relative;
+}
 nav {
     background-color: black;
-    grid-row: 2 / 3;
-    grid-column: 1 / 1;
+    height: 50px;
     display: grid;
-    grid: subgrid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 150;
 }
-
+.nav-scrolled {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
 nav a {
     display: inline-block;
     width: 100%;
@@ -72,7 +80,9 @@ nav a:hover {
 
 /*############ SECTION 1 - VIDEO ############*/
 .videoSection {
-    margin: 75px 0;
+    margin-top: -150px;
+    padding-top: 75px;
+    margin-bottom: 75px;
 }
 .videoSection iframe {
     display: block;
@@ -84,18 +94,22 @@ nav a:hover {
 }
 
 /*############ SECTION 2 - CHECK US OUT ##########*/
-
+#musicAnchor {
+    position: absolute;
+    top: -48px;
+}
 .checkUsOutSection {
     background-color: #ac2e2e;
     color: white;
-    margin: 75px 0;
+    margin: 25px 0;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
     letter-spacing: 3px;
+    position: relative;
 }
 .checkUsOutSection h2,
 .checkUsOutSection p{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .checkUsOutSection div a {
     display: inline-block;
@@ -118,32 +132,41 @@ nav a:hover {
 }
 .someTracks h2 {
     text-shadow: 0px 0px 1px black;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .someTracks iframe {
-    margin: 1em 25px;
-    border-radius: 3px;
+    display: block;
+    margin: 1em auto;
+    width: 80vw;
+    border-radius: 2px;
 }
+
 
 /*############ SECTION 4 - UPCOMING SHOWS ######*/
 
+#showsAnchor {
+    position: absolute;
+    top: -48px;
+}
 .upcomingShows {
     background-color: #ac2e2e;
     color: white;
     text-align: center;
-    margin: 75px 0;
-    padding: 50px 0;
+    margin-top: 58px;
+    padding: 35px 0;
+    position: relative;
 }
 .upcomingShows h2 {
     margin-bottom: 50px;
     letter-spacing: 3px;
 }
 .upcomingShows h3 {
-    margin: 25px 0;
-    letter-spacing: 3px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-size: 1em;
 }
 .upcomingShows h3:nth-of-type(2) {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .slideshowDiv {
     position: absolute;
@@ -157,8 +180,9 @@ nav a:hover {
 .upcomingShows img {
     width: 560px;
     height: auto;
+    background-color: black;
     opacity: 1;
-    transition: opacity 750ms ease-in-out;
+    transition: opacity 750ms;
     border-radius: 2px;
     position: relative;
     top: 0;
@@ -188,10 +212,15 @@ nav a:hover {
 
 
 /*######### SECTION 5 - ABOUT US ########*/
-
+#aboutAnchor {
+    position: absolute;
+    top: -90px;
+}
 .aboutUsSection {
     color: #ac2e2e;
     text-align: center;
+    margin-top: 50px;
+    position: relative;
 }
 .aboutUsSection img {
     display: block;
@@ -224,7 +253,7 @@ footer p {
 
 /*############ MEDIA QUERIES ############*/
 /* 760 PIXELS */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
     /*HEADER*/
     .banner {
         font-size: .7em;
@@ -245,11 +274,12 @@ footer p {
         height: auto;
     }
     .upcomingShows i {
-        font-size: 1.5em;
+        font-size: 1.7em;
         padding: 0 10px;
+        bottom: 100px;
     }
     .upcomingShows p {
-        width: 65%;
+        width: 80%;
     }
     /*ABOUT US*/
     .aboutUsSection p {
@@ -261,9 +291,9 @@ footer p {
 }
 
 /* 520 PIXELS */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 580px) {
     /*HEADERS AND SECTIONS MARGIN*/
-    .videoSection,
+
     .checkUsOutSection {
         margin: 40px 0;
     }
@@ -282,6 +312,6 @@ footer p {
     }
     .upcomingShows i {
         font-size: 1.25em;
-        bottom: 50px;
+        bottom: 75px;
     }
 }

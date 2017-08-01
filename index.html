@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>M is We</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>   
@@ -15,12 +16,12 @@
     <header>
        
        <!--M is We Banner - Disappears When Scroll Down-->
-        <div class="banner">
+        <div class="banner" id="banner">
             <h1>- M &nbsp;is &nbsp;We -</h1>
         </div>
        
        <!--Navigation - Sticky to Top of Page on Scroll-->
-        <nav>
+        <nav id="nav">
             <div class="musicLink">
                 <a href="#musicAnchor">MUSIC</a>
             </div>
@@ -40,7 +41,7 @@
         
     </header>
 <!--###### end header ######-->
-
+<div class="wrapper">
 <!--######### START SECTION 1 - VIDEO ############-->
     <section class="videoSection">
            
@@ -48,10 +49,9 @@
             
     </section>
    
-<!--############### START SECTION 2 - MUSIC PT 1 ###############-->
-    <a id="musicAnchor"></a>
+<!--############### START SECTION 2 - MUSIC PT 1 ########-->
     <section class="checkUsOutSection">
-       
+        <a id="musicAnchor"></a>
         <h2>CHECK OUT OUR LATEST MUSIC</h2>
         
         <p>available on:</p>
@@ -81,10 +81,9 @@
         
     </section>
    
-<!--############### START SECTION 4 - SHOWS ###############-->
-    <a id="showsAnchor"></a>
+<!--############### START SECTION 4 - SHOWS #############-->
     <section class="upcomingShows">
-        
+        <a id="showsAnchor"></a>
         <h2>UPCOMING SHOWS AND BOOKING INFORMATION</h2>
         
         <div class="slideShowDiv">
@@ -101,16 +100,15 @@
         <h3>August 1 at The Cave with Henbrain and Shagwuf</h3>
         <h3>September 24 at Milltown at the Carrboro Music Fest</h3>
         
-        <p>We perform throughout the Carrboro and Chapel Hill areas.</p>
-        <p>If you are interested in booking us
+        <p>We perform throughout the Carrboro and Chapel Hill areas. If you are interested in booking us
         for a show, please contact us at 123-456-7890 or at michael@miswe.com.</p>
         
     </section>
     
 <!--############### SECTION 5 - ABOUT US #############-->
-    <a id="aboutAnchor"></a>
+    
     <section class="aboutUsSection">
-       
+        <a id="aboutAnchor"></a>
         <h2>ABOUT M IS WE</h2>
         
         <img src="images/miswe-blacknwhite.png" />
@@ -127,6 +125,7 @@
         
     </footer>
     
+</div> <!-- END MAIN WRAPPER-->
     
     
 <!--############# JavaScript and NoScript #############-->
