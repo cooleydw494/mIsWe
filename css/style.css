@@ -9,7 +9,7 @@ body {
     padding-top: 150px;
 }
 .wrapper {
-    background-image: url(/images/bookCloth.png);
+    background-image: url(../images/bookCloth.png);
 }
 
 /*############ HEADER ############*/
