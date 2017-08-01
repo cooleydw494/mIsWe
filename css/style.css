@@ -23,11 +23,10 @@ header {
     height: 150px;
     position: fixed;
     top: 0;
+    background-color: black;
 }
-.banner h1 {
-    font-size: 6em;
-    color: #ac2e2e;
-    font-weight: 100;
+.banner img {
+    width: 350px;
 }
 /* NAVIGATION */
 nav, .wrapper {
