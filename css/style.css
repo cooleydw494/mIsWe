@@ -98,7 +98,7 @@ nav a:hover {
     top: -48px;
 }
 .checkUsOutSection {
-    background-color: #ac2e2e;
+    background-color: #b92025;
     color: white;
     margin: 25px 0;
     text-align: center;
@@ -125,7 +125,7 @@ nav a:hover {
 /*############ SECTION 3 - SOME TRACKS ############*/
 
 .someTracks {
-    color: #ac2e2e;
+    color: #b92025;
     text-align: center;
     letter-spacing: 3px;
 }
@@ -148,7 +148,7 @@ nav a:hover {
     top: -48px;
 }
 .upcomingShows {
-    background-color: #ac2e2e;
+    background-color: #b92025;
     color: white;
     text-align: center;
     margin-top: 58px;
@@ -216,7 +216,7 @@ nav a:hover {
     top: -90px;
 }
 .aboutUsSection {
-    color: #ac2e2e;
+    color: #b92025;
     text-align: center;
     margin-top: 50px;
     position: relative;
@@ -235,7 +235,7 @@ nav a:hover {
 .aboutUsSection p {
     width: 725px;
     margin: 25px auto;
-    color: #777;
+    color: #c0c0c0;
 }
 
 /*############### FOOTER ################*/
