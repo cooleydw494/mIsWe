@@ -5,13 +5,32 @@
 }
 body {
     font-family: 'Open Sans', serif, sans-serif;
-    background-color: ghostwhite;
     padding-top: 150px;
 }
 .wrapper {
     background-image: url(../images/bookCloth.png);
 }
 
+/*######## HEADINGS / STANDARD FONTS ETC #########*/
+section {
+    width: 100%;
+    padding: 2em 0;
+}
+h1 {
+    font-size: 2em;
+}
+h3 {
+    margin-top: 1em;
+}
+p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+img {
+    margin: 0 auto;
+    margin-top: 2em;
+}
 /*############ HEADER ############*/
 header {
     height: 200px;
@@ -27,6 +46,7 @@ header {
 }
 .banner img {
     width: 350px;
+    margin: 0;
 }
 /* NAVIGATION */
 nav, .wrapper {
@@ -76,12 +96,10 @@ nav a:hover {
     grid-column: 4 / 5;
 }
 
-
 /*############ SECTION 1 - VIDEO ############*/
 .videoSection {
     margin-top: -150px;
-    padding-top: 75px;
-    margin-bottom: 75px;
+    padding: 5.5em 0;
 }
 .videoSection iframe {
     display: block;
@@ -100,22 +118,18 @@ nav a:hover {
 .checkUsOutSection {
     background-color: #b92025;
     color: white;
-    margin: 25px 0;
     text-align: center;
-    padding: 20px 0;
     letter-spacing: 3px;
     position: relative;
 }
-.checkUsOutSection h2,
-.checkUsOutSection p{
-    margin-bottom: 30px;
+.checkUsOutSection div {
+    margin-top: 2em;
 }
 .checkUsOutSection div a {
     display: inline-block;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
     width: 200px;
-    font-size: 1.2em;
     transition: text-shadow 200ms;
 }
 .checkUsOutSection div a:hover {
@@ -129,13 +143,9 @@ nav a:hover {
     text-align: center;
     letter-spacing: 3px;
 }
-.someTracks h2 {
-    text-shadow: 0px 0px 1px black;
-    margin-bottom: 25px;
-}
 .someTracks iframe {
     display: block;
-    margin: 1em auto;
+    margin: 2em auto;
     width: 80vw;
     border-radius: 2px;
 }
@@ -151,21 +161,7 @@ nav a:hover {
     background-color: #b92025;
     color: white;
     text-align: center;
-    margin-top: 58px;
-    padding: 35px 0;
     position: relative;
-}
-.upcomingShows h2 {
-    margin-bottom: 50px;
-    letter-spacing: 3px;
-}
-.upcomingShows h3 {
-    margin: 10px 0;
-    letter-spacing: 2px;
-    font-size: 1em;
-}
-.upcomingShows h3:nth-of-type(2) {
-    margin-bottom: 25px;
 }
 .slideshowDiv {
     position: absolute;
@@ -177,7 +173,7 @@ nav a:hover {
     left: 0;
 }
 .upcomingShows img {
-    width: 560px;
+    width: 37em;
     height: auto;
     background-color: black;
     opacity: 1;
@@ -195,7 +191,7 @@ nav a:hover {
 .upcomingShows i {
     font-size: 2em;
     color: rgba(255, 255, 255, 0.23);
-    padding: 0 20px;
+    padding: 0 1em;
     position: relative;
     bottom: 100px;
     transition: text-shadow 150ms;
@@ -204,37 +200,24 @@ nav a:hover {
     text-shadow: 0px 0px 8px white;
     cursor: pointer;
 }
-.upcomingShows p {
-    width: 475px;
-    margin: 0 auto;
-}
 
 
 /*######### SECTION 5 - ABOUT US ########*/
 #aboutAnchor {
     position: absolute;
-    top: -90px;
+    top: -48px;
 }
 .aboutUsSection {
     color: #b92025;
     text-align: center;
-    margin-top: 50px;
     position: relative;
 }
 .aboutUsSection img {
     display: block;
-    width: 560px;
-    margin: 25px auto;
+    width: 37em;
     border-radius: 2px;
 }
-.aboutUsSection h2 {
-    text-shadow: 0px 0px 1px black;
-    letter-spacing: 3px;
-    font-size: 1.75em;
-}
 .aboutUsSection p {
-    width: 725px;
-    margin: 25px auto;
     color: #c0c0c0;
 }
 
@@ -242,22 +225,32 @@ nav a:hover {
 footer {
     background-color: black;
     color: white;
-    height: 175px;
+    height: 10em;
     text-align: center;
-    margin-top: 50px;
+    width: 100%;
 }
 footer p {
-    line-height: 175px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3.5em 0;
 }
 
 /*############ MEDIA QUERIES ############*/
+/* OVER 1400 PX */
+@media screen and (min-width: 1400px) {
+    body {
+        font-size: 1.75em;
+    }
+    .videoSection iframe {
+        width: 1120px;
+        height: 630px;
+    }
+    .upcomingShows i {
+        bottom: 4em;
+    }
+}
 /* 760 PIXELS */
 @media screen and (max-width: 780px) {
-    /*HEADER*/
-    .banner {
-        font-size: .7em;
-        padding-top: 20px;
-    }
     /*IFRAME*/
     .videoSection iframe {
         width: 500px;
@@ -273,9 +266,9 @@ footer p {
         height: auto;
     }
     .upcomingShows i {
-        font-size: 1.7em;
-        padding: 0 10px;
-        bottom: 100px;
+        bottom: 4em;
+        padding: .75em;
+        font-size: 1.5em;
     }
     .upcomingShows p {
         width: 80%;
@@ -291,11 +284,6 @@ footer p {
 
 /* 520 PIXELS */
 @media screen and (max-width: 580px) {
-    /*HEADERS AND SECTIONS MARGIN*/
-
-    .checkUsOutSection {
-        margin: 40px 0;
-    }
     /*IFRAME*/
     .videoSection iframe {
         width: 98%;
@@ -310,7 +298,7 @@ footer p {
         width: 90%;
     }
     .upcomingShows i {
-        font-size: 1.25em;
-        bottom: 75px;
+        bottom: 3em;
+        padding: .4em;
     }
 }
