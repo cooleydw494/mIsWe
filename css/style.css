@@ -68,6 +68,7 @@ nav {
 }
 nav a {
     display: inline-block;
+    position: relative;
     width: 100%;
     color: white;
     text-align: center;
@@ -82,7 +83,6 @@ nav a:hover {
     background-color: white;
     color: black;
 }
-
 .musicLink {
     display: inline-block;
     -ms-grid-column: 1;
@@ -238,7 +238,7 @@ nav a:hover {
     border-radius: 2px;
 }
 .aboutUsSection p {
-    color: #c0c0c0;
+    color: #919191;
 }
 
 /*############### FOOTER ################*/
