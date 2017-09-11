@@ -220,7 +220,18 @@ nav a:hover {
     text-shadow: 0px 0px 8px white;
     cursor: pointer;
 }
-
+.upcomingShows a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+    -webkit-transition: letter-spacing 150ms;
+    transition: letter-spacing 150ms;
+}
+.upcomingShows a:hover {
+    color: black;
+    letter-spacing: .125em;
+}
 
 /*######### SECTION 5 - ABOUT US ########*/
 #aboutAnchor {
