@@ -1,0 +1,30 @@
+{
+  "name": "miswe",
+  "version": "1.0.0",
+  "description": "band website for miswe",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooleydw494/miswe.git"
+  },
+  "keywords": [
+    "miswe",
+    "band",
+    "m",
+    "is",
+    "we"
+  ],
+  "author": "david cooley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooleydw494/miswe/issues"
+  },
+  "homepage": "https://github.com/cooleydw494/miswe#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0"
+  }
+}

@@ -65,7 +65,7 @@ function slide(direction) {
     slideShowImg.style.transition = "opacity 750ms";
     slideShowImg.style.opacity = 0;
     
-    setTimeout(function(){
+    setTimeout(function () {
         slideShowImg.setAttribute("src", "images/slideshow/slideshow" + currentSlide + ".png");
         slideShowImg.style.transition = "opacity 0ms";
         slideShowImg.style.opacity = 1;
