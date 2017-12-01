@@ -153,6 +153,13 @@ nav a:hover {
     color: black;
     letter-spacing: .21em;
 }
+.checkUsOutSection img {
+  width: 20em;
+  height: auto;
+}
+.checkUsOutSection img:hover {
+  opacity: .85;
+}
 
 /*############ SECTION 3 - SOME TRACKS ############*/
 
